@@ -1,0 +1,29 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      img.city-section__icon(src="images/city-section-icon.png" loading="lazy" width="708" height="625" alt="icon")
+      h2.city-section__title.font-w-ultra-bold.font-s-54.text-up
+        | Зарабатывайте 
+        br
+        span.color-yellow от 213 000 рублей 
+        br.no-br
+        | ежемесячно 
+        br.no-br
+        span.color-green
+          | на собственной 
+          br.no-br
+          | кофейне
+      .city-section__sub-title.font-w-semi-bold.font-s-20
+        | Проверьте, свободен ли ваш город 
+        br
+        | для работы по франшизе 
+        span.font-w-bold.color-green  «ROYALIONCUP COFFEE»
+      form.city-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") проверить
+        .main-section__agree-wrapper
+          include ../components/agree.pug
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1300" height="1464" alt="image")
+  img.city-section__icon-wave(src="images/icon-wave.svg" loading="lazy" width="1920" height="36" alt="wave")

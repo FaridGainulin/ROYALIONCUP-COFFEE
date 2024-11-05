@@ -1,0 +1,28 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      img.main-section__icon-crown(src="images/main-section-icon-crown.png" loading="lazy" width="708" height="625" alt="icon")
+      include ../components/header.pug
+      h1.main-section__title.font-w-ultra-bold.font-s-54.text-up
+        span.color-yellow Royalioncup coffee 
+        br
+        | ваша кофейня 
+        br.no-br
+        | с чистой 
+        span.color-green прибылью 
+        br.no-br
+        span.color-green от 2,5 млн ₽ в год
+      .main-section__sub-title.font-w-bold.font-s-22
+        | Узнайте, как запустить работу бизнеса  
+        span.color-beige всего за 57 дней
+      .main-section__text.font-w-semi-bold.font-s-20
+        | Получите подробный план открытия в 1 клик
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Получить
+        .main-section__agree-wrapper
+          include ../components/agree.pug
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1623" height="1430" alt="image")
+  img.main-section__icon-wave(src="images/icon-wave.svg" loading="lazy" width="1920" height="36" alt="wave")

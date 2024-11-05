@@ -1,0 +1,112 @@
+.about-section
+  // background-image: url('../images/about-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #FDF9E6
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0 70px 0
+    +above($breakpoints.md)
+      padding 80px 0 90px 0
+    +above($breakpoints.xxl)
+      padding 123px 0 157px 0
+
+  &__title
+    text-align: center
+    padding-bottom 15px
+    +above($breakpoints.sm)
+      padding-bottom 30px
+    +above($breakpoints.md)
+      padding-bottom 60px
+    +above($breakpoints.xxl)
+      padding-bottom 92px
+
+  &__sub-title,
+  &__text
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__sub-title
+    width 100%
+    padding 15px 10px
+    background-color #90BE45
+    color: #fff
+    border-radius: 10px
+    margin-bottom 15px
+    +above($breakpoints.sm)
+      width 410px
+      padding 20px 10px 20px 20px
+      border-radius: 15px
+      margin-bottom 20px
+    +above($breakpoints.md)
+      width 550px
+      border-radius: 20px
+      padding 25px 10px 25px 25px
+      margin-bottom 30px
+    +above($breakpoints.xxl)
+      width 620px
+      height: 190px
+      padding 30px 10px 30px 30px
+      margin-bottom 42px
+
+  &__img
+    width 280px
+    height: auto
+    margin 15px auto 0
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      width: 360px;
+      bottom: 64px;
+      right: -69px;
+    +above($breakpoints.md)
+      width: 520px;
+      bottom: 77px;
+      right: -160px;
+    +above($breakpoints.xxl)
+      width 641px
+      bottom: 117px
+      right: -148px
+
+  &__icon-1
+    position: absolute
+    width: 35px;
+    height: auto;
+    top: 257px;
+    left: -25px;
+    +above($breakpoints.sm)
+      width: 40px;
+      top: 47px;
+      left: -55px;
+    +above($breakpoints.md)
+      width: 50px;
+      top: 98px;
+      left: -79px;
+    +above($breakpoints.xxl)
+      width 64px
+      top: 157px
+      left: -100px
+
+  &__icon-2
+    position: absolute
+    width: 40px;
+    height: auto;
+    top: 73px;
+    left: 292px;
+    +above($breakpoints.sm)
+      width: 57px;
+      top: 130px;
+      left: 388px;
+    +above($breakpoints.md)
+      width: 70px;
+      top: 204px;
+      left: 519px;
+    +above($breakpoints.xxl)
+      width 89px
+      top: 290px
+      left: 583px

@@ -1,0 +1,50 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img-bg(src="images/finances-section-img-bg.png" loading="lazy" width="1870" height="1166" alt="image")
+      h2.finances-section__title.font-w-ultra-bold.font-s-56
+        | Начните зарабатывать 
+        br
+        span.color-green сразу после старта 
+        br.no-br
+        span.color-green бизнеса
+      .finances-section__sub-title.font-w-bold.font-s-22
+        | Показатели франшизы в цифрах:
+      .finances-section__box
+        .swiper-bullet
+          .finances-section__cards.swiper-wrapper
+            .finances-section__card.swiper-slide
+              .font-w-bold.font-s-34 1,9 млн рублей
+              .font-s-18 средний размер инвестиций
+            .finances-section__card.swiper-slide
+              .font-w-bold.font-s-34 1 270 000 рублей
+              .font-s-18 ежемесячная выручка
+            .finances-section__card.swiper-slide
+              .font-w-bold.font-s-34 от 100 продаж
+              .font-s-18 будет совершаться ежедневно
+            .finances-section__card.swiper-slide
+              .font-w-bold.font-s-34 16,8%
+              .font-s-18 рентабельность <br> по чистой прибыли
+            .finances-section__card.swiper-slide
+              .font-w-bold.font-s-34 от 350 рублей
+              .font-s-18 средний чек одного клиента
+            .finances-section__card.swiper-slide
+              .font-w-bold.font-s-34 213 000 рублей
+              .font-s-18 ежемесячная чистая прибыль
+          .bullet-pagination
+        img.finances-section__img(src="images/finances-section-img.jpg" loading="lazy" width="760" height="944" alt="image")
+      .finances-section__bottom
+        img.finances-section__bottom-img(src="images/finances-section-bottom-img.png" loading="lazy" width="1240" height="956" alt="image")
+        .font-w-bold.font-s-22
+          | Узнайте, что будет входить в стартовые вложения 
+          br.no-br
+          span.color-yellow и как быстро вы окупите ваши инвестиции
+        .finances-section__bottom-text.font-w-semi-bold.font-s-16 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug
+      img.finances-section__img-cup(src="images/finances-section-img-cup.png" loading="lazy" width="1609" height="1183" alt="icon")
